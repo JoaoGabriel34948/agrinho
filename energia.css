@@ -1,0 +1,126 @@
+.cabecalho {
+    background-color: darkorange ; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navbar-custom {
+    background-color: goldenrod; /* azul-petróleo suave */
+}
+
+.navbar-custom .nav-link {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffd700; /* dourado para destaque no hover */
+}
+
+.navbar-nav .nav-link {
+    border: 1.5px solid darkorange;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 0 6px;
+    font-size: 0.95rem;
+    color: #ffffff;
+    transition: background-color 0.3s;
+  }
+
+  .navbar-nav .nav-link:hover {
+    background-color: #ffffff;
+    text-decoration: none;
+  }
+
+footer {
+    background-color: darkorange; 
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    font-weight: bold;
+}
+
+.container {
+            max-width: 900px;
+            margin: 0 auto; /* centraliza horizontalmente */
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            text-align: justify;
+            color: #333;
+        }
+
+        /* Título com cor teal */
+        .container h2 {
+            color: darkorange;
+            margin-bottom: 15px;
+        }
+
+        /* Parágrafos com espaçamento */
+        .container p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .galeria {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .bloco-imagem {
+      position: relative;
+      width: 240px;
+      height: 320px; /* proporção 3:4 */
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .bloco-imagem img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .tampa {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: darkorange;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 2;
+      transition: transform 1s ease, opacity 0.8s ease;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .tampa h4 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+
+    .tampa small {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .quebrada {
+      transform: rotateY(90deg) scale(0.7);
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .bloco-imagem.revelado img {
+      opacity: 1;
+    }

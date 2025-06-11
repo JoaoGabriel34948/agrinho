@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="energia.css">
+
+  
+</head>
+<body>
+
+    <div class="cabecalho">
+        <h1>Agrinho 2025</h1>
+        <h2>Festejando conexão Campo Cidade</h2>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container justify-content-center">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Vida no Campo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="energia.html">Fontes Limpas de Energia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="agua.html">Uso Eficiente da Água</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="producao.html">Práticas Agrícolas Sustentáveis</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <audio id="musica" autoplay loop playsinline>
+  <source src="Plantando Sonhos.mp3" type="audio/mpeg" />
+  Seu navegador não suporta áudio.
+</audio>
+
+<script>
+  const audio = document.getElementById('musica');
+  audio.volume = 0.2; // volume máximo
+</script>
+
+
+<script>
+  const musica = document.getElementById('musica');
+  
+  // Força a tocar o áudio (mesmo que bloqueie, tenta)
+  musica.volume = 0.5;
+  musica.play().catch(e => {
+    console.log('Autoplay bloqueado, sem som até interação.');
+  });
+</script>
+
+
+
+  <audio id="somClick" src="JG2.mp3" preload="auto"></audio>
+
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+<main class="container mt-5">
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <img src="./assets/image/tm.jpeg" class="img-fluid rounded" alt="Energia no Campo">
+    </div>
+    <div class="col-md-8">
+      <h2>Fontes Energéticas no Campo</h2>
+      <p>O fornecimento de energia é indispensável para o funcionamento diário das atividades rurais, viabilizando desde sistemas de irrigação até o uso de maquinário moderno que aumenta a eficiência e os resultados da produção agrícola.</p>
+
+      <p>Nos dias atuais, produtores rurais têm buscado alternativas sustentáveis, como a energia solar, o biogás e a eólica, que oferecem economia e maior autonomia para as propriedades.</p>
+
+      <p>Essas soluções também contribuem para práticas mais ecológicas, reduzindo o impacto ambiental e fortalecendo a sustentabilidade na zona rural.</p>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+ <h2 style="text-align: center; color: darkorange;">Galeria Interativa</h2>
+
+  <div class="galeria">
+    <div class="bloco-imagem">
+      <img src="assets/image/1.jpeg" alt="Imagem 1">
+      <div class="tampa">
+        <h4>Imagem de um poste que ilumina o meio rural</h4>
+        <small>(clique aqui para ver)</small>
+      </div>
+    </div>
+
+    <div class="bloco-imagem">
+      <img src="assets/image/2.jpeg" alt="Imagem 2">
+      <div class="tampa">
+        <h4>Interruptor dae energia campista</h4>
+        <small>(clique aqui para ver)</small>
+      </div>
+    </div>
+
+    <div class="bloco-imagem">
+      <img src="assets/image/3.jpeg" alt="Imagem 3">
+      <div class="tampa">
+        <h4>Lampadas utilizadas por agricultores</h4>
+        <small>(clique aqui para ver)</small>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tampas = document.querySelectorAll('.tampa');
+
+    tampas.forEach(tampa => {
+      tampa.addEventListener('click', () => {
+        tampa.classList.add('quebrada');
+        tampa.parentElement.classList.add('revelado');
+      });
+    });
+  </script>
+
+<div class="container my-5">
+  <h3 class="mb-3" style="color: darkorange;">Energia como Aliada do Crescimento Rural</h3>
+  <p>
+    A presença da energia elétrica no campo é vital para a modernização do setor agrícola e para proporcionar melhores condições de vida às famílias rurais. Ela impulsiona o uso de tecnologias, aumenta a capacidade produtiva e contribui para a segurança alimentar nacional.
+  </p>
+  <p>
+    O uso de fontes renováveis, como solar e biogás, tem transformado a rotina das propriedades, trazendo mais autonomia, economia e preservação ambiental. Essas soluções vêm se tornando essenciais para garantir a resiliência das atividades agrícolas.
+  </p>
+  <p>
+    No entanto, ainda há obstáculos, como a falta de infraestrutura elétrica em áreas remotas e a necessidade de políticas públicas que incentivem a adoção de tecnologias limpas. A gestão consciente do uso energético será essencial para o futuro sustentável do meio rural.
+  </p>
+</div>
+
+<main class="container mt-5">
+  <div class="row mb-4">
+    <div class="col-12">
+      <h2>Energia e Produção: Conexão para o Futuro Rural</h2>
+      <p>
+        A eletricidade é um recurso essencial para otimizar a produção no campo. Ela permite o uso de equipamentos modernos, sistemas automatizados de irrigação e processos que aumentam a eficiência e reduzem desperdícios.
+      </p>
+      <p>
+        Fontes alternativas como a solar e o biogás são fundamentais para tornar o processo produtivo mais ecológico e econômico, reduzindo a dependência de combustíveis fósseis e fortalecendo a sustentabilidade.
+      </p>
+      <p>
+        Expandir o acesso à energia nas zonas rurais é investir em inclusão, produtividade e bem-estar, promovendo um campo mais forte e preparado para os desafios do futuro.
+      </p>
+    </div>
+  </div>
+</main>
+
+
+<div class="container mt-5">
+  <h2 style="color: darkorange; text-align: center; margin-bottom: 1.5rem;">Dúvidas Comuns sobre Energia Rural</h2>
+
+  <div class="faq-sessao">
+    <div class="faq-bloco">
+      <button class="faq-pergunta">1. Por que a energia é tão importante no campo?</button>
+      <div class="faq-resposta">
+        <p>Ela permite o funcionamento de máquinas, sistemas de irrigação, armazenamento de alimentos e outras tecnologias que garantem eficiência e qualidade na produção agrícola.</p>
+      </div>
+    </div>
+
+    <div class="faq-bloco">
+      <button class="faq-pergunta">2. Quais são as principais fontes utilizadas nas fazendas?</button>
+      <div class="faq-resposta">
+        <p>Além da energia convencional, produtores investem em energia solar, eólica e biomassa como soluções alternativas e sustentáveis.</p>
+      </div>
+    </div>
+
+    <div class="faq-bloco">
+      <button class="faq-pergunta">3. A energia solar realmente é viável no campo?</button>
+      <div class="faq-resposta">
+        <p>Sim. Ela tem se mostrado uma excelente alternativa para reduzir os custos operacionais e aumentar a autonomia energética nas propriedades rurais.</p>
+      </div>
+    </div>
+
+    <div class="faq-bloco">
+      <button class="faq-pergunta">4. Existem programas de apoio ao uso de energia no campo?</button>
+      <div class="faq-resposta">
+        <p>Sim. Políticas públicas como o “Luz para Todos” e incentivos à energia limpa ajudam no acesso e na modernização energética de áreas rurais.</p>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .faq-sessao {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+    .faq-bloco {
+      margin-bottom: 1rem;
+      border: 2px solid darkorange;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .faq-pergunta {
+      background-color: darkorange;
+      color: white;
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      text-align: left;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .faq-pergunta:hover {
+      background-color: #cc7000;
+    }
+    .faq-resposta {
+      max-height: 0;
+      padding: 0 1rem;
+      color: #6b3a00;
+      background-color: #ffe5cc;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      overflow: hidden;
+    }
+    .faq-resposta p {
+      margin: 1rem 0;
+    }
+    .faq-bloco.ativo .faq-resposta {
+      max-height: 300px;
+      padding: 1rem;
+    }
+  </style>
+
+  <script>
+    const faqBlocos = document.querySelectorAll('.faq-bloco');
+
+    faqBlocos.forEach(bloco => {
+      const btn = bloco.querySelector('.faq-pergunta');
+      btn.addEventListener('click', () => {
+        faqBlocos.forEach(b => {
+          if (b !== bloco) b.classList.remove('ativo');
+        });
+        bloco.classList.toggle('ativo');
+      });
+    });
+  </script>
+</div>
+
+<div class="container my-3 text-center">
+  <p style="max-width: 700px; margin: 0 auto; font-size: 0.9rem; color: #555;">
+    Referência: <a href="https://globorural.globo.com/opiniao/vozes-do-agro/noticia/2025/03/transicao-energetica-no-campo.ghtml" target="_blank" rel="noopener noreferrer">
+    Globo Rural – Transição Energética no Campo</a>
+  </p>
+</div>
+
+
+  <footer>
+        Todos os direitos reservados para Agrinho 2025 - Festejando a conexão campo cidade.
+    </footer>
+
+</body>
+</html>

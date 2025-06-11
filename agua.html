@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="agua.css">
+
+  
+</head>
+<body>
+
+    <div class="cabecalho">
+        <h1>Agrinho 2025</h1>
+        <h2>Festejando conexão Campo Cidade</h2>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container justify-content-center">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Vida no Campo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="energia.html">Fontes Limpas de Energia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="agua.html">Uso Eficiente da Água</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="producao.html">Práticas Agrícolas Sustentáveis</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <audio id="musica" autoplay loop playsinline>
+  <source src="Plantando Sonhos.mp3" type="audio/mpeg" />
+  Seu navegador não suporta áudio.
+</audio>
+
+<script>
+  const audio = document.getElementById('musica');
+  audio.volume = 0.2; // volume máximo
+</script>
+
+
+<script>
+  const musica = document.getElementById('musica');
+  
+  // Força a tocar o áudio (mesmo que bloqueie, tenta)
+  musica.volume = 0.5;
+  musica.play().catch(e => {
+    console.log('Autoplay bloqueado, sem som até interação.');
+  });
+</script>
+
+
+
+  <audio id="somClick" src="JG2.mp3" preload="auto"></audio>
+
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+  <div class="container mt-4">
+  <div class="row mb-4">
+    <div class="col-md-12">
+      <h2 style="color: darkorange;">Gestão da Água na Agricultura Moderna</h2>
+      <p>
+        A água é um recurso vital para a agricultura sustentável. Seu uso eficiente impacta diretamente na produtividade das plantações e na saúde do solo, garantindo colheitas mais robustas e duradouras.
+      </p>
+      <p>
+        Métodos avançados de irrigação, como o sistema de gotejamento, ajudam a conservar a água e aumentam o rendimento das culturas, evitando o desperdício e protegendo os recursos naturais.
+      </p>
+      <p>
+        A preservação das fontes hídricas, o manejo adequado do solo e a recuperação ambiental são essenciais para assegurar a disponibilidade de água para as próximas gerações no meio rural.
+      </p>
+      <p>
+        Garantir água limpa e em quantidade suficiente é fundamental para a segurança alimentar, o desenvolvimento social e a sustentabilidade ambiental.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row g-4">
+
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#modalCampo1">
+        <img src="assets/image/t.jpeg" class="card-img-top" alt="Cultivo Familiar">
+        <div class="card-body">
+          <h5 class="card-title">Cultivo Familiar</h5>
+          <p class="card-text">A produção familiar é essencial para o abastecimento alimentar e a geração de renda no interior.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#modalCampo2">
+        <img src="assets/image/a.jpeg" class="card-img-top" alt="Meio Ambiente">
+        <div class="card-body">
+          <h5 class="card-title">Meio Ambiente</h5>
+          <p class="card-text">A proteção dos ecossistemas rurais é essencial para manter a biodiversidade e os recursos naturais.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm cursor-pointer" data-bs-toggle="modal" data-bs-target="#modalCampo3">
+        <img src="assets/image/a2.jpeg" class="card-img-top" alt="Inovação Agrícola">
+        <div class="card-body">
+          <h5 class="card-title">Inovação Agrícola</h5>
+          <p class="card-text">Tecnologias modernas ajudam a tornar o campo mais eficiente, produtivo e sustentável.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modalCampo1" tabindex="-1" aria-labelledby="modalCampo1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header bg-brown text-white">
+        <h5 class="modal-title" id="modalCampo1Label">Cultivo Familiar e Sustentabilidade</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>A agricultura de base familiar promove alimentos saudáveis e fortalece economias locais, preservando saberes tradicionais.</p>
+        <h6>Vantagens do cultivo familiar:</h6>
+        <ul>
+          <li>Empregos para a população do campo</li>
+          <li>Transmissão de técnicas passadas entre gerações</li>
+          <li>Menor uso de insumos industriais e mais respeito ao solo</li>
+          <li>Maior variedade alimentar</li>
+          <li>Estímulo à economia regional</li>
+        </ul>
+        <p>Fortalecer essa prática é apoiar um modelo mais justo, ecológico e seguro para todos.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-brown" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="modalCampo2" tabindex="-1" aria-labelledby="modalCampo2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header bg-brown text-white">
+        <h5 class="modal-title" id="modalCampo2Label">Cuidando da Natureza Rural</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Preservar o meio ambiente nas áreas rurais é essencial para garantir água, solo fértil e equilíbrio climático.</p>
+        <h6>Práticas ecológicas no campo:</h6>
+        <ul>
+          <li>Proteção das fontes de água</li>
+          <li>Replantio de áreas degradadas</li>
+          <li>Uso consciente da terra</li>
+          <li>Redução de produtos químicos nocivos</li>
+          <li>Sensibilização ambiental entre os moradores</li>
+        </ul>
+        <p>A natureza bem cuidada garante prosperidade e bem-estar para as futuras gerações.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-brown" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="modalCampo3" tabindex="-1" aria-labelledby="modalCampo3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header bg-brown text-white">
+        <h5 class="modal-title" id="modalCampo3Label">Tecnologia Transformando o Campo</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>A modernização rural traz mais eficiência, reduz impactos e melhora a vida dos produtores.</p>
+        <h6>Recursos tecnológicos disponíveis:</h6>
+        <ul>
+          <li>Irrigação automatizada</li>
+          <li>Drones para análise de cultivo</li>
+          <li>Painéis solares nas propriedades</li>
+          <li>Apps de gestão e comercialização</li>
+          <li>Técnicas de precisão no plantio</li>
+        </ul>
+        <p>O investimento em tecnologia garante um futuro mais inovador e sustentável no campo.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-brown" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-4">
+  <h3 class="titulo-teal" style="color: darkorange;">O Papel da Água na Agricultura Sustentável</h3>
+  <p class="texto-justificado">
+    A água é indispensável para a vida no campo e a continuidade das atividades agrícolas. Sua gestão correta promove a saúde dos ecossistemas e melhora a qualidade de vida das populações rurais, sendo um recurso estratégico para o futuro do agro.
+  </p>
+  
+  <ul class="lista-topicos">
+    <li><strong>Fundamento da Produção:</strong> A água viabiliza o cultivo saudável e a criação animal, sustentando a base da alimentação global.</li>
+    <li><strong>Preservação Ambiental:</strong> Protege rios, nascentes e solos, fundamentais para a biodiversidade e equilíbrio ecológico.</li>
+    <li><strong>Suporte às Comunidades:</strong> Garante acesso à água potável, essencial para o bem-estar das famílias rurais.</li>
+    <li><strong>Práticas Eficientes:</strong> Uso inteligente da água, com técnicas que aumentam produtividade sem prejudicar os recursos hídricos.</li>
+    <li><strong>Segurança Hídrica:</strong> Planejamento e uso responsável evitam crises e garantem o abastecimento durante períodos críticos.</li>
+    <li><strong>Desenvolvimento Econômico:</strong> A disponibilidade de água é um pilar para a prosperidade das áreas rurais e para a economia local.</li>
+  </ul>
+</div>
+
+<div class="container my-5">
+  <div class="border border-darkorange rounded p-4 bg-light" style="max-width: 700px; margin: auto;">
+    <h4 class="text-darkorange mb-3" style="color: darkorange;">A Importância da Água no Meio Rural</h4>
+    <p>
+      A água é um recurso vital nas áreas rurais, essencial para a agricultura, criação de animais e manutenção dos ecossistemas locais. Seu uso consciente contribui para a sustentabilidade e o equilíbrio ambiental.
+    </p>
+    <blockquote class="border-start border-4 ps-3 fst-italic text-muted" style="border-color: darkorange;">
+      "Sem água, a terra não produz e os animais não sobrevivem. Preservar esse recurso é preservar nossa vida no campo." – João Silva, agricultor do interior do Paraná.
+    </blockquote>
+    <p>
+      Estudos mostram que o manejo eficiente da água, aliado à proteção de nascentes e uso de tecnologias como irrigação por gotejamento, tem promovido o desenvolvimento rural sustentável e a segurança hídrica nas comunidades.
+    </p>
+    <p class="text-muted small">
+      Fonte: <a href="https://www.ufsm.br/pet/agronomia/2022/08/23/o-uso-da-agua-na-agricultura" target="_blank" rel="noopener noreferrer">UFSM – O uso da água na agricultura</a>
+    </p>
+  </div>
+</div>
+
+
+
+<main class="container mt-5">
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <img src="./assets/image/a3.jpeg" class="img-fluid rounded" alt="Água no Campo">
+    </div>
+    <div class="col-md-8">
+      <h2>Desafios do Uso da Água no Meio Rural</h2>
+      <p>A água é um recurso fundamental para a produção agrícola e para a vida nas zonas rurais, mas sua disponibilidade vem se tornando cada vez mais limitada devido a fatores como mudanças climáticas e uso inadequado.</p>
+
+      <p>O manejo sustentável da água, com tecnologias como irrigação eficiente e conservação de nascentes, é essencial para garantir o abastecimento das comunidades rurais e a produtividade das culturas.</p>
+
+      <p>Investir em práticas conscientes de uso e recuperação dos recursos hídricos fortalece a resiliência do meio rural frente à escassez e contribui para a preservação ambiental.</p>
+    </div>
+  </div>
+</main>
+
+
+<div class="container mt-5">
+  <h2 style="color: darkorange; text-align: center; margin-bottom: 1.5rem;">Dúvidas Frequentes sobre o Uso da Água na Agricultura</h2>
+
+  <div class="faq-sessao">
+    <div class="faq-bloco">
+      <button class="faq-pergunta">1. Por que a água é fundamental para a agricultura?</button>
+      <div class="faq-resposta">
+        <p>A água é essencial para o desenvolvimento das plantas, irrigação eficiente e manutenção da fertilidade do solo, garantindo produções saudáveis e abundantes.</p>
+      </div>
+    </div>
+
+    <div class="faq-bloco">
+      <button class="faq-pergunta">2. Quais técnicas de irrigação otimizam o uso da água?</button>
+      <div class="faq-resposta">
+        <p>Os sistemas de gotejamento e microaspersão são os mais eficazes, aplicando água diretamente na raiz, evitando desperdício e promovendo maior rendimento.</p>
+      </div>
+    </div>
+
+    <div class="faq-bloco">
+      <button class="faq-pergunta">3. Qual a importância da conservação da água no campo?</button>
+      <div class="faq-resposta">
+        <p>Conservar a água assegura recursos para o futuro, protege os ecossistemas e mantém a produtividade agrícola em longo prazo.</p>
+      </div>
+    </div>
+
+    <div class="faq-bloco">
+      <button class="faq-pergunta">4. Que tecnologias auxiliam no manejo sustentável da água?</button>
+      <div class="faq-resposta">
+        <p>Sensores de umidade, sistemas automatizados e estações meteorológicas ajudam a monitorar e controlar o uso da água, promovendo eficiência e economia.</p>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .faq-sessao {
+      margin: 0 auto;
+      max-width: 800px;
+    }
+    .faq-bloco {
+      margin-bottom: 1rem;
+      border: 2px solid darkorange;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .faq-pergunta {
+      background-color: da;
+      color: rgb(0, 0, 0);
+      width: 100%;
+      padding: 1rem;
+      border: none;
+      text-align: left;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .faq-pergunta:hover {
+      background-color: darkorange;
+    }
+    .faq-resposta {
+      max-height: 0;
+      padding: 0 1rem;
+      color: darkorange;
+      background-color: #e0f2f1;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      overflow: hidden;
+    }
+    .faq-resposta p {
+      margin: 1rem 0;
+    }
+    .faq-bloco.ativo .faq-resposta {
+      max-height: 300px;
+      padding: 1rem;
+    }
+  </style>
+
+  <script>
+    const faqBlocos = document.querySelectorAll('.faq-bloco');
+
+    faqBlocos.forEach(bloco => {
+      const btn = bloco.querySelector('.faq-pergunta');
+      btn.addEventListener('click', () => {
+        faqBlocos.forEach(b => {
+          if (b !== bloco) b.classList.remove('ativo');
+        });
+        bloco.classList.toggle('ativo');
+      });
+    });
+  </script>
+</div>
+
+<div class="container my-3 text-center">
+  <p style="max-width: 700px; margin: 0 auto; font-size: 0.9rem; color: #555;">
+    Referência: <a href="https://g1.globo.com/sp/ribeirao-preto-franca/agrishow/noticia/2025/05/04/irrigacao-rural-novas-tecnologias-buscam-otimizar-uso-de-agua-no-campo.ghtml" target="_blank" rel="noopener noreferrer">
+    G1 – Irrigação Rural e Novas Tecnologias</a>
+  </p>
+</div>
+
+  <footer>
+        Todos os direitos reservados para Agrinho 2025 - Festejando a conexão campo cidade.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+  <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="producao.css">
+
+  
+</head>
+<body>
+
+    <div class="cabecalho">
+        <h1>Agrinho 2025</h1>
+        <h2>Festejando conexão Campo Cidade</h2>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container justify-content-center">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Vida no Campo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="energia.html">Fontes Limpas de Energia</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="agua.html">Uso Eficiente da Água</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="producao.html">Práticas Agrícolas Sustentáveis</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+   <audio id="musica" autoplay loop playsinline>
+  <source src="Plantando Sonhos.mp3" type="audio/mpeg" />
+  Seu navegador não suporta áudio.
+</audio>
+
+<script>
+  const audio = document.getElementById('musica');
+  audio.volume = 0.2; // volume máximo
+</script>
+
+
+<script>
+  const musica = document.getElementById('musica');
+  
+  // Força a tocar o áudio (mesmo que bloqueie, tenta)
+  musica.volume = 0.5;
+  musica.play().catch(e => {
+    console.log('Autoplay bloqueado, sem som até interação.');
+  });
+</script>
+
+
+
+  <audio id="somClick" src="JG2.mp3" preload="auto"></audio>
+
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+  <div class="container">
+  <h2 style="color: darkorange;">Produção Agrícola: Pilar do Desenvolvimento Rural</h2>
+  <p>
+    A produção agrícola é a base fundamental para o abastecimento alimentar das populações urbanas e rurais, além de representar um importante motor econômico para o país. O setor agrícola envolve o cultivo de diversas culturas, a criação de animais e o manejo sustentável dos recursos naturais, buscando sempre aumentar a produtividade sem comprometer o meio ambiente.
+  </p>
+  <p>
+    A modernização das técnicas agrícolas, o uso de tecnologia de ponta e a adoção de práticas sustentáveis são essenciais para garantir a segurança alimentar e a sustentabilidade do campo. A produção agrícola não só alimenta o país, mas também gera empregos, fomenta o comércio e impulsiona as exportações.
+  </p>
+  <ul>
+    <li><strong>Diversificação das Culturas:</strong> A variedade de culturas permite maior resiliência e aproveitamento dos recursos do solo e clima.</li>
+    <li><strong>Uso de Tecnologias:</strong> Máquinas agrícolas, sistemas de irrigação e softwares de gestão aumentam a eficiência da produção.</li>
+    <li><strong>Sustentabilidade:</strong> Práticas como rotação de culturas, adubação orgânica e preservação das matas ciliares ajudam a conservar o solo e a água.</li>
+    <li><strong>Comercialização e Exportação:</strong> A produção agrícola é fundamental para abastecer o mercado interno e para o comércio internacional, contribuindo para a economia nacional.</li>
+    <li><strong>Desenvolvimento Rural:</strong> Investir na produção agrícola significa melhorar a qualidade de vida no campo, gerar renda e incentivar a permanência dos jovens na zona rural.</li>
+  </ul>
+  <p>
+    Entender e valorizar a produção agrícola é reconhecer o papel estratégico que o campo desempenha no desenvolvimento do país e na construção de um futuro mais justo, sustentável e próspero para todos.
+  </p>
+</div>
+
+<main class="container mt-5">
+  <div class="row mb-5 align-items-center">
+    <div class="col-md-7 order-md-1 order-2">
+      <h2>Inovações e Sustentabilidade na Produção Agrícola</h2>
+      <p>Para garantir o crescimento contínuo da produção agrícola, é fundamental incorporar inovações que promovam o uso racional dos recursos naturais, como água e solo, e que minimizem impactos ambientais.</p>
+      <p>Práticas como a agricultura de precisão, o manejo integrado de pragas e o uso de fertilizantes orgânicos têm transformado o campo em um ambiente mais sustentável e produtivo.</p>
+      <p>Essas estratégias permitem aumentar a eficiência no uso dos insumos, reduzir desperdícios e preservar a biodiversidade, fortalecendo a resiliência das propriedades rurais frente às mudanças climáticas.</p>
+      <p>Dessa forma, a produção agrícola não apenas atende à demanda crescente por alimentos, mas também contribui para a conservação dos recursos naturais, assegurando a viabilidade do campo para as gerações futuras.</p>
+    </div>
+    <div class="col-md-5 order-md-2 order-1">
+      <img src="./assets/image/p2.jpeg" class="img-fluid rounded" alt="Tecnologia na Agricultura">
+    </div>
+  </div>
+</main>
+
+  
+  <div style="max-width: 700px; margin: 0 auto;">
+  <canvas id="graficoProducao" style="width: 100%; height: 300px;"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('graficoProducao').getContext('2d');
+
+  const data = {
+    labels: ['2018', '2019', '2020', '2021', '2022', '2023'],
+    datasets: [
+      {
+        label: 'Produção Agrícola (milhões de toneladas)',
+        data: [120, 130, 125, 140, 150, 160],
+        borderColor: 'darkorange',
+        backgroundColor: 'rgba(255, 140, 0, 0.2)',
+        tension: 0.4, // para linha ondulada
+        fill: true,
+        pointRadius: 4,
+        pointBackgroundColor: 'darkorange',
+        borderWidth: 3,
+      },
+      {
+        label: 'Exportações para a Cidade (milhões de toneladas)',
+        data: [90, 100, 95, 110, 115, 120],
+        borderColor: '#ff8c0040',
+        backgroundColor: 'rgba(255, 140, 0, 0.1)',
+        tension: 0.4,
+        fill: true,
+        pointRadius: 3,
+        pointBackgroundColor: 'darkorange',
+        borderWidth: 2,
+        borderDash: [6, 4], // linha tracejada para diferenciar
+      }
+    ]
+  };
+
+  const options = {
+    responsive: true,
+    maintainAspectRatio: false,
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          color: 'darkorange',
+          font: {
+            weight: 'bold'
+          }
+        },
+        grid: {
+          color: 'rgba(255, 140, 0, 0.2)'
+        }
+      },
+      x: {
+        ticks: {
+          color: 'darkorange',
+          font: {
+            weight: 'bold'
+          }
+        },
+        grid: {
+          color: 'rgba(255, 140, 0, 0.2)'
+        }
+      }
+    },
+    plugins: {
+      legend: {
+        labels: {
+          color: 'darkorange',
+          font: {
+            weight: 'bold'
+          }
+        }
+      },
+      tooltip: {
+        mode: 'index',
+        intersect: false,
+      }
+    },
+    interaction: {
+      mode: 'nearest',
+      axis: 'x',
+      intersect: false
+    }
+  };
+
+  new Chart(ctx, {
+    type: 'line',
+    data: data,
+    options: options
+  });
+</script>
+
+<div class="container my-5">
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="info-box p-4 border rounded shadow-sm h-100">
+        <h3 style="color: darkorange; text-align: left;">Tecnologias Agrícolas</h3>
+        <p>O avanço tecnológico, como o uso de drones, sensores e sistemas de irrigação inteligente, tem aumentado a produtividade e reduzido desperdícios na produção agrícola.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="info-box p-4 border rounded shadow-sm h-100">
+        <h3 style="color: darkorange; text-align: left;">Sustentabilidade no Campo</h3>
+        <p>Práticas sustentáveis, incluindo rotação de culturas, agricultura orgânica e conservação do solo, ajudam a preservar o meio ambiente e garantir a longevidade da produção rural.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="info-box p-4 border rounded shadow-sm h-100">
+        <h3 style="color: darkorange; text-align: left;">Mercado e Exportação</h3>
+        <p>A expansão das exportações agrícolas fortalece a economia rural, conectando os produtores locais a mercados nacionais e internacionais, aumentando renda e investimentos no setor.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container my-5">
+  <h2 style="color: darkorange;">Desafios Climáticos no Campo</h2>
+  <p>
+    A variabilidade climática é um dos maiores desafios enfrentados pelos produtores rurais. Chuvas irregulares, secas prolongadas e eventos extremos como geadas e granizo afetam diretamente o rendimento das colheitas e a estabilidade das lavouras.
+  </p>
+  <p>
+    Com as mudanças climáticas globais, tornou-se essencial investir em práticas de adaptação no campo. O uso de sementes resistentes, o monitoramento climático por satélites e a diversificação de culturas são algumas estratégias que ajudam a reduzir os impactos do clima na agricultura.
+  </p>
+  <p>
+    Além disso, sistemas agroflorestais e técnicas de manejo do solo contribuem para uma maior resiliência do ambiente rural, permitindo que o agricultor enfrente períodos críticos com menor prejuízo à produção.
+  </p>
+  <p>
+    Com planejamento e conhecimento, é possível transformar os desafios do clima em oportunidades para tornar a agricultura mais inteligente, sustentável e conectada com as necessidades do futuro.
+  </p>
+</div>
+
+<div class="container my-5">
+  <h2 style="color: darkorange;">Fatos Interessantes sobre a Agricultura Brasileira</h2>
+  <p>
+    A agricultura no Brasil desempenha um papel crucial na economia, na segurança alimentar e na sustentabilidade ambiental. A seguir, confira alguns fatos surpreendentes e relevantes sobre o setor agrícola brasileiro:
+  </p>
+  <ul>
+    <li><strong>Líder Mundial em Exportações:</strong> O Brasil é um dos maiores exportadores mundiais de produtos como soja, café, milho, carne bovina e açúcar, abastecendo diversos países com alimentos e matérias-primas.</li>
+
+    <li><strong>Mais de 30% do PIB Agro vem da Agricultura:</strong> O agronegócio responde por cerca de 25 a 30% do Produto Interno Bruto do país, com grande parte desse valor vindo diretamente da agricultura.</li>
+
+    <li><strong>Agricultura Familiar em Destaque:</strong> Cerca de 70% dos alimentos que chegam à mesa dos brasileiros vêm da agricultura familiar, com milhões de pequenos produtores ativos no campo.</li>
+
+    <li><strong>Grande Diversidade de Culturas:</strong> O Brasil cultiva dezenas de culturas agrícolas devido à variedade climática e territorial, indo de grãos como arroz e soja até frutas tropicais como manga, banana e maracujá.</li>
+
+    <li><strong>Clima Favorável:</strong> A posição geográfica do Brasil favorece a produção agrícola durante o ano inteiro, com regiões que têm duas ou até três safras anuais.</li>
+
+    <li><strong>Tecnologia de Ponta:</strong> O país é referência mundial em agricultura tropical e desenvolve pesquisas avançadas na Embrapa, focadas em produtividade, sustentabilidade e adaptação climática.</li>
+
+    <li><strong>Expansão da Agricultura Sustentável:</strong> Técnicas como o plantio direto, a integração lavoura-pecuária-floresta e o uso racional da água têm ganhado espaço, promovendo uma produção mais ecológica.</li>
+
+    <li><strong>Reservas Naturais Protegidas:</strong> Apesar da atividade agrícola, o Brasil mantém vastas áreas protegidas, com regras ambientais rígidas que regulam o uso da terra, especialmente no bioma amazônico.</li>
+
+    <li><strong>Responsável por Milhões de Empregos:</strong> A agricultura é uma das principais fontes de emprego nas áreas rurais, gerando renda e fixando famílias no campo.</li>
+
+    <li><strong>Desafios Constantes:</strong> Mesmo com o crescimento, o setor enfrenta desafios como mudanças climáticas, acesso a crédito, logística de transporte e necessidade de políticas públicas mais eficientes.</li>
+  </ul>
+</div>
+
+<div class="container my-3 text-center">
+  <p style="max-width: 700px; margin: 0 auto; font-size: 0.9rem; color: #555;">
+    Referência: <a href="https://blog.aegro.com.br/producao-agricola/" target="_blank" rel="noopener noreferrer">
+    AEGRO – Produção Agrícola</a>
+  </p>
+</div>
+
+  
+  <footer>
+        Todos os direitos reservados para Agrinho 2025 - Festejando a conexão campo cidade.
+    </footer>
+
+</body>
+</html>
